@@ -7,6 +7,7 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     <script src="output/app.js"></script>
@@ -14,33 +15,89 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-black">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="./assets/img/APLogo-20-20.png" alt="Logo" width="150" height="">
+            <img src="./assets/img/APLogo-20-20.png" alt="Logo" class="w-25">
           </a>
              <ul class="list-group list-group-horizontal">
-              <li class="list-group-item">
-                <span style=" color: black;"> <i class="bi bi-github" style="font-size: 2rem;"></i> </span>
+              <li class="list-group-item bg-transparent">
+                <a href="https://github.com/VillarroelJairo" target="_blank"><span style=" color: plum;"> <i class="bi bi-github" style="font-size: 2rem;"></i></span></a>
               </li>
-              <li class="list-group-item">
-                <span style=" color: black;"> <i class="bi bi-facebook" style="font-size: 2rem;"></i> </span>
+              <li class="list-group-item bg-transparent">
+                <a href="https://www.facebook.com/jairo.villarroel.3/" target="_blank"><span style=" color: cornflowerblue;"> <i class="bi bi-facebook" style="font-size: 2rem;"></i> </span></a>
               </li>
-              <li class="list-group-item">
-                <span style=" color: black;"> <i class="bi bi-instagram" style="font-size: 2rem;"></i> </span>
+              <li class="list-group-item bg-transparent">
+                <a href="https://www.instagram.com/villarroel__jairo/" target="_blank"><span style=" color: gainsboro;"> <i class="bi bi-instagram" style="font-size: 2rem;"></i> </span></a>
               </li>
-              <li class="list-group-item">
-                <span style=" color: black;"> <i class="bi bi-person-circle" style="font-size: 2rem;"></i> </span>
+              <li class="list-group-item bg-transparent"> 
+                <!-- Button trigger modal -->
+                <span style=" color: whitesmoke;"> 
+                  <i data-bs-toggle="modal" data-bs-target="#loginModal" class="bi bi-person-circle" style="font-size: 2rem;"></i>
+                 </span>
               </li>
              </ul>
-
-
-
-
-
-
-
-
-
         </div>
       </nav>
-    
+      <!-- Seccion Banner-->
+<section class="banner">
+  <h1 class="text-white text-center pt-5">Hola, soy Jairo Villarroel <br> Estudiante de Arquitectura y Desarrollador Full Stack Jr.</h1>
+</section>
+
+<!-- Presentacion-->
+<section class="presentacion mt-3" >
+  <h3 class="text-center "> <span> Acerca de mi </span></h3>
+ <div class="container text-sm-start">
+  <div class="row">
+    <div class="col-5">
+      <img src="./assets/img/IMG_20191007_235154_723.jpg" alt="Foto perfil" class="rounded-circle img-fluid w-75">
+    </div>
+    <div class="col-6">
+      <h3 class="mt-3 pt-5">Soy Maestro Mayor de Obras recibido de la Escuela Tecnica N°3 de San Miguel de Tucuman en el año 2017, actualmente en la carrera de Arquitectura y Urbanismo de la UNT, puedo mencionar que hoy en dia es mi pasion y cuando tengo que realizar proyectos doy lo mejor para realizarlos.</h3>
+    </div>rab
+  </div>
+</div>
+</section>
+
+<!-- Habilidades-->
+<section class="presentacion mt-3" >
+  <h3 class="text-center "> <span> Habilidades </span></h3>
+ <div class="container text-sm-start">
+  <div class="row">
+    <div class="col-5">
+      <img src="" alt="Foto perfil">
+    </div>
+    <div class="col-6">
+      <h3 class="mt-3 pt-5"></h3>
+    </div>
+  </div>
+</div>
+</section>
+
+
+    <!-- El Login -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Sesion</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text"></div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Ingresar</button>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>
