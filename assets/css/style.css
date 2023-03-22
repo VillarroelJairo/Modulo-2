@@ -64,3 +64,32 @@ section.slider {
     -moz-background-size: cover;
     -o-background-size: cover;
 }
+
+footer {
+   background: #000;
+   width: 100%;
+   padding: 20px 30px;
+}
+
+.login {
+ height: 73vh;
+}
+
+.formularioLogin {
+  margin-top: 15%;
+}
+
+.perfil { 
+    margin-top: 10%;
+    position: relative;
+    width: 70%;
+    right: -15%;
+}
+
+.admin {
+ font-size: 1.5rem;
+}
+
+a.link {
+ text-decoration: none;
+}
