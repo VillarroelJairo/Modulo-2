@@ -34,69 +34,120 @@
             <h5 class="text-black text-center mt-4">Jairo Villarroel <br> Estudiante de Arquitectura <br> Desarrollador Full Stack Jr.</h5>
             <ul class="list-group mt-4">
                 <!-- Cada li tiene que ser un trigger modal -->
-                <a href="#" class="link"> <li class="list-group-item admin"> <i class="bi bi-share-fill"></i> Redes </li> </a>
-                <a href="#" class="link" data-bs-toggle="modal" data-bs-target="#exampleModal"> <li class="list-group-item admin"> <i class="bi bi-house-up"></i> Banner </li> </a>
-                <li class="list-group-item admin"> <i class="bi bi-info-circle"></i> Info </li>
-                <li class="list-group-item admin"> <i class="bi bi-building"></i> Proyectos Arq. </li>
-                <li class="list-group-item"></li>
+                <a href="#" class="link" data-bs-toggle="modal" data-bs-target="#redesModal"> <li class="list-group-item admin"> <i class="bi bi-share-fill"></i> Redes </li> </a>
+                <a href="#" class="link" data-bs-toggle="modal" data-bs-target="#bannerModal"> <li class="list-group-item admin"> <i class="bi bi-house-up"></i> Banner </li> </a>
+                <a href="#" class="link" data-bs-toggle="modal" data-bs-target="#infoModal"> <li class="list-group-item admin"> <i class="bi bi-info-circle"></i> Info </li>  </a>  
+                <a href="#" class="link" data-bs-toggle="modal" data-bs-target="#proyectModal"> <li class="list-group-item admin"> <i class="bi bi-building"></i> Proyectos Arq. </li> </a>
               </ul>
         </div>
         <div class="col-8">
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
+          <!-- inicio de banner modal -->
+            <div class="modal fade" id="bannerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                      <h5 class="modal-title" id="exampleModalLabel">Banner title</h5>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                      ...
+                      ... <!-- funcion que podria tener este modal? -->
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Save changes</button>
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <button type="button" class="btn btn-primary">Guardar</button>
                     </div>
                   </div>
                 </div>
               </div>
+        </div> <!-- fin de banner modal -->
+
+        <!-- inicio de Redes modal -->
+        <div class="modal fade" id="redesModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Redes title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                ... <!-- funcion que podria tener este modal? -->
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Guardar</button>
+              </div>
+            </div>
+          </div>
         </div>
+  </div> <!-- fin de Redes modal -->
+
+  <!-- inicio de info modal -->
+  <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Info title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ... <!-- funcion que podria tener este modal? -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Guardar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> <!-- fin de info modal -->
+
+<!-- inicio de proyect modal -->
+<div class="modal fade" id="proyectModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Proyect title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- funcion que podria tener este modal? -->
+        <div class="container">
+          <div class="row">
+            <div class="col-2">
+              
+            </div>
+            <div class="col-8">
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text"></div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+              </form>
+      
+            </div>
+            <div class="col-2">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div> <!-- fin de proyect modal -->
         <div class="col-1">
         </div>
         </div>
       </div>
-      <!-- form login -->
-    <section class="login">
-      <div class="container">
-        <div class="row">
-          <div class="col-2">
-            
-          </div>
-          <div class="col-8 formularioLogin">
-            <div class="modal-body">
-                <form>
-                  <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text"></div>
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
-                  </div>
-                </form>
-              </div>
-
-              <div class="modal-footer">
-                <button type="submit" class="btn btn-primary">Registrarme</button>
-              </div>
-              <small> Si ya tenes cuenta <a href="/login.html"> ingresa </a> </small>
-          </div>
-          <div class="col-2">
-            
-          </div>
-        </div>
-      </div>
-    </section>
 
       <footer class="bg-black text-white text-center fs-6">
         <div class="pt-2">
